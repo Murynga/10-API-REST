@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/estilo.css">
     <title>Login - Lanchonete do Ximbas</title>
 </head>
 <body>
-    
+    <div id="cabecalho">
+        <img id="logo" src="/favicon.png" alt="SwiftSport logo">
+        <h1>Lanchonete do Ximbas</h1>
+    </div>
+    <div id="container-links">
+        <ul id="links">
+            <li><a href="/index.html">Página inicial</a></li>
+        </ul>
+    </div>
+    <section id="conteudo">
+        
+        <h1>Login</h1>
+        <hr>
+        <br>
+        <form action="/js/main.js" id="formulario-login">
+            <input type="text" placeholder="Nome de usuário" id="nomeUsuario" required>
+            <br>
+            <input type="password" placeholder="Senha" required>
+            <br>
+            <button onclick="checaAdmin()" type="submit">Logar</button>
+        </form>
+        <br>
+        <hr>
+        <p>
+            Todos os direitos de uso seguem a <a style="color: rgb(95, 10, 10);" href="https://github.com/Murynga/Trabalho-Final-WEB-FlashCards/blob/8c84e8518d96dafdc2d83fdf2b0999beb0455a2a/LICENSE">licença MIT.</a>
+        </p>
+    </section>
 
     <script src="/js/main.js"></script>
 </body>
