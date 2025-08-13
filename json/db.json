@@ -1,0 +1,39 @@
+{
+    "alimentos": [
+        { 
+            "id": "1",
+            "nome": "Estrela Dourada",
+            "ingredientes": "1 salsicha, molho de tomate, cebola, alho, milho verde e o tempero da casa",
+            "preco": "R$ 8,00",
+            "imagem": "https://cozinhasimples.com.br/wp-content/uploads/cachorro-quente-cozinha-simples.jpg"
+        },
+        { 
+            "id": "2",
+            "nome": "Príncipe Encantado",
+            "ingredientes": "Filé de tilápia fresca, ovo, queijo muçarela, molho de tomate, alho, cebola, manjericão e o tempero da casa",
+            "preco": "R$ 35,00",
+            "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2007/01/Peixe-a-parmegiana-350x230.jpg"
+        },
+        { 
+            "id": "3",
+            "nome": "Odalisca",
+            "ingredientes": "1 hambúrguer de boi, ovo, queijo muçarela, molho de tomate, requeijão cremoso e o tempero da casa",
+            "preco": "R$ 8,00",
+            "imagem": "https://padariasantacruz.loji.com.br/storage/uploads/7F4CdVqJygncZ30CvfoNU7w8WLzjku4WSjNjKidV.jpeg"
+        },
+        { 
+            "id": "4",
+            "nome": "Vendaval",
+            "ingredientes": "filé de tilápia fresca, creme de leite, pimentão, cebola, limão, tomate e o tempero da casa",
+            "preco": "R$ 30,00",
+            "imagem": "https://cdn.casaeculinaria.com/wp-content/uploads/2024/03/02103142/Peixe-cozido-688x387.webp"
+        }, 
+        { 
+            "id": "5",
+            "nome": "Senhorita",
+            "ingredientes": "leite condensado, leite, ovo, maisena, essência de abacaxi, abacaxi, creme de leite, coco ralado e o tempero da casa",
+            "preco": "R$ 6,00",
+            "imagem": "https://guiadacozinha.com.br/wp-content/uploads/2018/08/Torta-de-abacaxi-350x230.jpg"
+        }
+    ]
+}
