@@ -23,10 +23,10 @@
 
 | Página | Tipo de requisição | Endpoint |
 | --- | --- | --- |
-| index.html | GET |  |
-| pages/administracao.html | GET |  |
-| pages/administracao.html | POST |  |
-| pages/administracao.html | DELETE |  |
+| [index.html](/index.html) | GET |  |
+| [pages/administracao.html](/pages/administracao.html) | GET |  |
+| [pages/administracao.html](/pages/administracao.html) | POST |  |
+| [pages/administracao.html](/pages/administracao.html) | DELETE |  |
 
 ## Créditos
 
