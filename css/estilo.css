@@ -85,14 +85,40 @@ hr {
     margin-bottom: 6pt;
 }
 
-.alimentos {
+.bloco-alimento {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-.dados-alimentos {
+.bloco-alimento.selecionado {
+    background-color: rgb(255, 144, 144);
+}
+
+.imagem-alimento {
+    margin-right: 15px;
+    width: 300px;
+    height: 200px;
+    margin: 25px 0;
+    border-style: solid;
+    border-color: rgb(71, 20, 20);
+    border-radius: 10px;
+}
+
+.bloco-dados-alimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dados-alimento {
     font-size: 12pt;
     line-height: 30pt;
+    margin: 10px 0;
 }
 
 input[type=text], input[type=password], select {

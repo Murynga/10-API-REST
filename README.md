@@ -74,7 +74,9 @@ A API utilizada foi a [json-server](https://github.com/typicode/json-server), a 
   > [!IMPORTANT]
   > `npx` procura e executa o arquivo pedido, `json-server` inicia o servidor, e `json/db.json` é o caminho para o nosso arquivo JSON.
 
-  Depois disso, nossa API vai estar *disponível* na porta *localhost:3000*, onde será usada no projeto.
+  Depois disso, nossa API vai estar *visível* na porta *localhost:3000*, onde podemos ve-la funcionando para teste.
+
+  Agora, para que seja possível fazer o *deploy* do site, na Vercel, com a API funcionando, foi necessário criar um arquivo `server.js`, que cria um servidor de onde acessar os dados da API, e um arquivo de configuração, `vercel.json`, para que a Vercel encontre e execute adequadamente o servidor.
 
   ---
 </details>

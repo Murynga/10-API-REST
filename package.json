@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
-  }
+  },
+  "name": "10-api-rest",
+  "version": "1.0.0",
+  "description": "Repositório para desenvolvimento de projeto de uma lanchonete fictícia, cujos produtos são advindos de uma API, feito como atividade para a disciplina de WEB I",
+  "main": "js/main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murynga/10-API-REST.git"
+  },
+  "keywords": [
+    "api",
+    "json-server",
+    "rest",
+    "lanchonete"
+  ],
+  "author": "Walisson Fernandes Dias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Murynga/10-API-REST/issues"
+  },
+  "homepage": "https://github.com/Murynga/10-API-REST#readme"
 }
