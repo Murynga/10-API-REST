@@ -106,6 +106,7 @@ https://youtu.be/nGB6J4GJ9mw
 https://youtu.be/NofcwdmLQ-c
 https://youtu.be/3JPY6R0rY_Y
 https://chatgpt.com/s/t_689fed0c80e481918c4279b551de9d61
+https://chatgpt.com/s/t_68a15b23588081918eeaaab157875410
 
 ### Referências bibliográficas e imagéticas
 
