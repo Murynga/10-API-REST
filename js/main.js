@@ -1,5 +1,5 @@
 const listaAlimentos = document.getElementById("lista-alimentos");
-const url = "/api/alimentos/";
+const url = "/api/alimentos";
 let alimentoSelecionado = null;
 
 preencheLista();
