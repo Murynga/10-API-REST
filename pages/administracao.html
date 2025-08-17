@@ -26,11 +26,22 @@
         <div id="lista-alimentos">
             <!-- Os alimentos aparecerão aqui -->
         </div>
+        <form id="formulario-dados">
+            <input type="text" placeholder="Nome do alimento">
+            <br>
+            <input type="text" placeholder="Ingredientes">
+            <br>
+            <input type="text" placeholder="Preço">
+            <br>
+            <input type="text" placeholder="URL da imagem do produto">
+            <br>
+            <div id="botoes-administracao">
+                <button onclick="adicionaAlimento()" type="submit">Adicionar novo alimento</button>
+                <button onclick="alteraDados()" type="submit">Alterar dados</button>
+                <button onclick="removeAlimento()" type="submit">Remover alimento selecionado</button>
+            </div>
+        </form>
         <br>
-        <div id="botoes-administracao">
-            <button id="alterar-informacoes" onclick="alteraInformacoes()">Alterar informações</button>
-            <button id="remover-alimento" onclick="removeAlimento()">Remover alimento</button>
-        </div>
         <br>
         <hr>
         <p>

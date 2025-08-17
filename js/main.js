@@ -1,5 +1,5 @@
 const listaAlimentos = document.getElementById("lista-alimentos");
-const url = "http://localhost:3000/alimentos";
+const url = "http://localhost:3000/alimentos/";
 let alimentoSelecionado = null;
 
 preencheLista();
@@ -63,7 +63,7 @@ async function preencheLista() {
 
             blocoAlimento.classList.add("selecionado");
             
-            alimentoSelecionado = [alimento.nome, alimento.id];
+            alimentoSelecionado = [alimento.id, alimento.nome, alimento.ingredientes, alimento.preco, alimento.imagem];
         });
         
         listaAlimentos.appendChild(blocoAlimento);
@@ -81,5 +81,50 @@ async function getAlimentos() {
         
     } else {
         return alert("Erro HTTP: " + response.status);
+    }
+}
+
+// função assíncrona para alterar o(s) dado(s) de um alimento escolhido (método PUT)
+/// ALTERAR DADOS!!!!!!
+async function alteraDados() {
+    if (alimentoSelecionado != null) {
+        let novosDados = document.getElementById("formulario-dados");
+        novosDados.addEventListener("submit", (submit) => {
+            submit.preventDefault();
+        });
+
+        if (novosDados[0].value == "") {
+            novosDados[0].value = alimentoSelecionado[1];
+
+        } if (novosDados[1].value == "") {
+            novosDados[1].value = alimentoSelecionado[2];
+
+        } if (novosDados[2].value == "") {
+            novosDados[2].value = alimentoSelecionado[3];
+
+        } if (novosDados[3].value == "") {
+            novosDados[3].value = alimentoSelecionado[4];
+        }
+        
+        const response = await fetch(url + alimentoSelecionado[0], {
+            method: "PUT",
+            body: JSON.stringify({
+                id: alimentoSelecionado[0],
+                nome: novosDados[0].value,
+                ingredientes: novosDados[1].value,
+                preco: novosDados[2].value,
+                imagem: novosDados[3].value,
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        }); 
+
+        if (response.ok) {
+            listaAlimentos.innerText = "";
+            await preencheLista();
+        } else {
+            alert("Erro ao alterar dados: " + response.status);
+        }
     }
 }
