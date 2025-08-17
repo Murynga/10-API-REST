@@ -23,15 +23,11 @@ O projeto desenvolvido é o de uma lanchonete de alimentos relacionados ao canto
   > - Nome de usuário: Cledivan
   > - Senha: Calypso99
 
-  Feito isso, você chegará na seguinte página:
+  Nela, você pode clicar em um dos alimentos na lista de alimentos para selecioná-lo, e logo em seguida, possui duas opções:
 
-  ![Captura de tela da página de Administração do site](/images/readme-images/pagina-administracao.png)
+  - Clicar em `Alterar dados`, o que substituirá os dados do alimento selecionado pelos dados inseridos nos respectivos campos;
 
-  Nela, você pode clicar no nome de um dos alimentos na lista de alimentos para selecioná-lo, e logo em seguida, possui duas opções:
-
-  - Clicar em `Alterar informações`, em que será requisitado ao administrador alterar os dados desejados, e pode confirmar a alteração clicando em `OK`;
-
-  - Clicar em `Remover alimento`, em que será perguntado ao administrador se ele tem certeza de que quer remover o alimento escolhido, onde ele pode optar por confirmar ou cancelar a remoção.
+  - Clicar em `Adicionar novo alimento`, o que adicionará um novo alimento com todos os dados inseridos nos respectivos campos.
 
   ---
 </details>
@@ -40,7 +36,7 @@ O projeto desenvolvido é o de uma lanchonete de alimentos relacionados ao canto
 
 Para o desenvolvimento do projeto, foram utilizados arquivos HTML, CSS e JavaScript puros, além de um arquivo JSON, onde ficam os dados utilizados pela API.
 
-A API utilizada foi a [json-server](https://github.com/typicode/json-server), a qual permite a geração de uma API falsa com qualquer tipo de dado, desde que definido no arquivo `db.json` no projeto. Node.js também foi utilizado.
+A API utilizada foi a [json-server](https://github.com/typicode/json-server), a qual permite a geração de uma API falsa com qualquer tipo de dado, desde que definido no arquivo `db.json` no projeto. Node.js também foi utilizado para a utilização do json-server.
 
 <details>
   <summary>Processo de implementação da API</summary>
@@ -74,7 +70,7 @@ A API utilizada foi a [json-server](https://github.com/typicode/json-server), a 
   > [!IMPORTANT]
   > `npx` procura e executa o arquivo pedido, `json-server` inicia o servidor, e `json/db.json` é o caminho para o nosso arquivo JSON.
 
-  Depois disso, nossa API vai estar *visível* na porta *localhost:3000*, onde podemos ve-la funcionando para teste.
+  Depois disso, nossa API vai estar *visível* na porta *localhost:3000*, onde podemos vê-la funcionando para teste.
 
   Agora, para que seja possível fazer o *deploy* do site, na Vercel, com a API funcionando, foi necessário criar um arquivo `server.js`, que cria um servidor de onde acessar os dados da API, e um arquivo de configuração, `vercel.json`, para que a Vercel encontre e execute adequadamente o servidor.
 
@@ -88,21 +84,38 @@ A API utilizada foi a [json-server](https://github.com/typicode/json-server), a 
 | [index.html](/index.html) | GET | /alimentos |
 | [pages/administracao.html](/pages/administracao.html) | GET | /alimentos |
 | [pages/administracao.html](/pages/administracao.html) | PUT | /alimentos |
-| [pages/administracao.html](/pages/administracao.html) | DELETE | /alimentos |
+| [pages/administracao.html](/pages/administracao.html) | POST | /alimentos |
 
 ## Créditos
 
 ### Desenvolvimento geral do projeto
 
-
+https://www.w3schools.com/css/css_form.asp
+https://www.w3schools.com/css/css3_flexbox_container.asp
+https://github.com/typicode/json-server
+https://github.com/orgs/community/discussions/16925
+https://www.w3schools.com/jsref/met_document_createelement.asp
+https://www.w3schools.com/jsref/prop_element_classlist.asp
+https://chatgpt.com/s/t_68a003874b648191a66a40a3ca5e2358
 
 ### Desenvolvimento da API
 
-
+https://github.com/typicode/json-server
+https://www.npmjs.com/package/json-server
+https://youtu.be/nGB6J4GJ9mw
+https://youtu.be/NofcwdmLQ-c
+https://youtu.be/3JPY6R0rY_Y
+https://chatgpt.com/s/t_689fed0c80e481918c4279b551de9d61
 
 ### Referências bibliográficas e imagéticas
 
-
+https://youtube.com/shorts/BacLTHg6kbk
+https://music.apple.com/br/album/os-maiores-sucessos/1628689151
+https://cozinhasimples.com.br/lanches/molho-para-cachorro-quente/
+https://guiadacozinha.com.br/receitas/peixe-a-parmegiana/
+https://padariasantacruz.loji.com.br/produto/120/hamburguer-assado-und
+https://guiadacozinha.com.br/receitas/torta-de-abacaxi-sobremesa/
+https://casaeculinaria.com/receitas/peixe-cozido/
 
 ## Licença
 

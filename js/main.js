@@ -85,7 +85,6 @@ async function getAlimentos() {
 }
 
 // função assíncrona para alterar o(s) dado(s) de um alimento escolhido (método PUT)
-/// ALTERAR DADOS!!!!!!
 async function alteraDados() {
     if (alimentoSelecionado != null) {
         let novosDados = document.getElementById("formulario-dados");
@@ -127,4 +126,42 @@ async function alteraDados() {
             alert("Erro ao alterar dados: " + response.status);
         }
     }
+}
+
+// função assíncrona para adicionar um novo alimento (método POST)
+async function adicionaAlimento() {
+
+    let novosDados = document.getElementById("formulario-dados");
+        novosDados.addEventListener("submit", (submit) => {
+            submit.preventDefault();
+        });
+
+    if (novosDados[0].value == "" || novosDados[1].value == "" ||
+        novosDados[2].value == "" || novosDados[3].value == "") {
+        window.alert("Você deve preencher todos os campos para adicionar um novo alimento!");
+        return;
+    }
+
+    const alimentos = await getAlimentos();
+    
+    const response = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify({
+            id: alimentos.length + 1,
+            nome: novosDados[0].value,
+            ingredientes: novosDados[1].value,
+            preco: novosDados[2].value,
+            imagem: novosDados[3].value,
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
+    }); 
+
+    if (response.ok) {
+        listaAlimentos.innerText = "";
+        await preencheLista();
+    } else {
+        alert("Erro ao alterar dados: " + response.status);
+    } 
 }
