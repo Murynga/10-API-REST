@@ -12,36 +12,8 @@
       "dest": "api/server.js"
     },
     {
-      "src": "/css/(.*)",
-      "dest": "/css/$1"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/js/(.*)",
-      "dest": "/js/$1"
-    },
-    {
-      "src": "/json/(.*)",
-      "dest": "/json/$1"
-    },
-    {
-      "src": "/pages/(.*)",
-      "dest": "/pages/$1"
-    },
-    {
-      "src": "/(.*\\.(ico|png|json|js|css))$",
-      "dest": "/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/pages/$1.html"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ]
 }

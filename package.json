@@ -1,13 +1,9 @@
 {
-  "dependencies": {
-    "json-server": "^1.0.0-beta.3"
-  },
   "name": "10-api-rest",
   "version": "1.0.0",
   "description": "Repositório para desenvolvimento de projeto de uma lanchonete fictícia, cujos produtos são advindos de uma API, feito como atividade para a disciplina de WEB I",
-  "main": "js/main.js",
-  "devDependencies": {},
   "scripts": {
+    "start": "node api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Murynga/10-API-REST/issues"
   },
-  "homepage": "https://github.com/Murynga/10-API-REST#readme"
+  "homepage": "https://github.com/Murynga/10-API-REST#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
 }
