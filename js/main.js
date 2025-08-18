@@ -120,8 +120,7 @@ async function alteraDados() {
         }); 
 
         if (response.ok) {
-            listaAlimentos.innerText = "";
-            await preencheLista();
+            location.reload();
         } else {
             console.log("Erro ao alterar dados: " + response.status);
         }
@@ -159,8 +158,7 @@ async function adicionaAlimento() {
     }); 
 
     if (response.ok) {
-        listaAlimentos.innerText = "";
-        await preencheLista();
+        location.reload();
     } else {
         console.log("Erro ao alterar dados: " + response.status);
     } 
