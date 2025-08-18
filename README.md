@@ -72,7 +72,7 @@ A API utilizada foi a [json-server](https://github.com/typicode/json-server), a 
 
   Depois disso, nossa API vai estar *visível* na porta *localhost:3000*, onde podemos vê-la funcionando para teste.
 
-  Agora, para que seja possível fazer o *deploy* do site, na Vercel, com a API funcionando, foi necessário criar um arquivo `server.js`, que cria um servidor de onde acessar os dados da API, e um arquivo de configuração, `vercel.json`, para que a Vercel encontre e execute adequadamente o servidor.
+  Agora, para que seja possível fazer o *deploy* do site, na Vercel, com a API funcionando, foi necessário criar um arquivo `server.js`, que cria um servidor de onde acessar os dados da API, e um arquivo de configuração, `vercel.json`, para que a Vercel encontre e execute adequadamente o servidor. Também foi necessário alterar a porta usada no arquivo `main.js`, para uso adequado da Vercel.
 
   ---
 </details>
@@ -81,10 +81,10 @@ A API utilizada foi a [json-server](https://github.com/typicode/json-server), a 
 
 | Página | Tipo de requisição | Endpoint |
 | :---: | :---: | :---: |
-| [index.html](/index.html) | GET | /alimentos |
-| [pages/administracao.html](/pages/administracao.html) | GET | /alimentos |
-| [pages/administracao.html](/pages/administracao.html) | PUT | /alimentos |
-| [pages/administracao.html](/pages/administracao.html) | POST | /alimentos |
+| [index.html](/index.html) | GET | api/alimentos |
+| [pages/administracao.html](/pages/administracao.html) | GET | api/alimentos |
+| [pages/administracao.html](/pages/administracao.html) | PUT | api/alimentos |
+| [pages/administracao.html](/pages/administracao.html) | POST | api/alimentos |
 
 ## Créditos
 
@@ -107,7 +107,8 @@ https://youtu.be/NofcwdmLQ-c
 https://youtu.be/3JPY6R0rY_Y
 https://chatgpt.com/s/t_689fed0c80e481918c4279b551de9d61
 https://chatgpt.com/s/t_68a15b23588081918eeaaab157875410
-https://chatgpt.com/s/t_68a15ecfaf488191af02fb27b176e6fe
+https://chatgpt.com/s/t_68a15ecfaf488191af02fb27b176e6fe  
+https://chatgpt.com/share/68a26f68-0f78-800a-8ab8-0280c3ed8d83
 
 ### Referências bibliográficas e imagéticas
 

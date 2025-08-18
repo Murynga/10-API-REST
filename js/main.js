@@ -80,7 +80,7 @@ async function getAlimentos() {
         return data;
         
     } else {
-        return alert("Erro HTTP: " + response.status);
+        return console.log("Erro HTTP: " + response.status);
     }
 }
 
@@ -123,7 +123,7 @@ async function alteraDados() {
             listaAlimentos.innerText = "";
             await preencheLista();
         } else {
-            alert("Erro ao alterar dados: " + response.status);
+            console.log("Erro ao alterar dados: " + response.status);
         }
     }
 }
@@ -162,6 +162,6 @@ async function adicionaAlimento() {
         listaAlimentos.innerText = "";
         await preencheLista();
     } else {
-        alert("Erro ao alterar dados: " + response.status);
+        console.log("Erro ao alterar dados: " + response.status);
     } 
 }
